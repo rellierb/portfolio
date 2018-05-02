@@ -11,7 +11,6 @@ html, body {
 	height: 100vh;
 }
 
-
 h1, h2, h3, h4, h5, h6, p, li, label,
 dd, dt, time {
 	font-family: 'Raleway', sans-serif;
@@ -43,7 +42,6 @@ nav, footer,
 
 nav, footer {
 	width: 100%;
-	/*background-color: rgba(229,80,57,.9);*/
 }
 
 .center-block {
@@ -64,7 +62,6 @@ a:link {
 	background-color: #f7f1e3;
 	min-height: 100vh;
 }
-
 
 .front img {
 	max-width: 300px;
@@ -98,7 +95,8 @@ a:link {
 
 /* Navigation Bar */
 nav {
-	height: 10vh;
+	height: 12588888888P"""""""""""""""""""""""""""""";km
+	\7="''''vh;
 }
 
 .nav-list, .accounts-list {
@@ -120,13 +118,16 @@ nav {
 
 .accounts-list > li {
 	font-size: 1.8em;
-	margin-top: 100px;
 }
 
 .fab {
 	color: rgba(229,80,57, 1);	
 }
-	
+
+.accounts-list > li a i.fab:hover {
+	color: #ff6b81;
+}
+
 /* footer */
 footer {
 	height: 10vh;
@@ -153,7 +154,7 @@ nav {
 }
 
 .nav-list li {
-	padding: .5em 2.7em .5em 2.7em;
+	padding: .5em 2.7em;
 	margin: 0 .5em;
 }
 
@@ -186,11 +187,6 @@ nav {
 	text-decoration: underline;
 }
 
-
-.about {
-	padding: 50px 0;
-}
-
 .about h2,
 .portfolio h2,
 .skill h2,
@@ -211,7 +207,6 @@ nav {
 	font-family: 'Abril Fatface', cursive;
 	font-size: 1.4em;
 	letter-spacing: .2em;
-
 }
 
 .about,
@@ -221,7 +216,7 @@ nav {
 	grid-template-columns: 1fr;
 	width: 70%;
 	margin: 0 auto;
-	margin-top: 2em;
+	padding: 50px 0;
 }
 
 .about p {
@@ -229,30 +224,28 @@ nav {
 	padding: 15px;
 }
 
+section#portfolio {
+	width: 100%; 
+	background-color: #f7f1e3;
+}
+
 .portfolio {
 	padding-bottom: 40px;
 }
-
 
 .portfolio h4 a,
 .portfolio p {
 	color: #E55039;
 }
 
-.desktop {
-	width: 60%;
-	height: 60vh;
-	margin-top: .8em;
-	margin-bottom: .8em;
-}
-
 .container {
 	position: relative;
-	width: 50%;
 	padding: 10px;
+	width: 90%;
 	border: 1px solid #E55039;
-	margin-bottom: 30px;
+	margin: 30px auto;
 }
+
 
 .image {
 	display: block;
@@ -301,16 +294,26 @@ nav {
 	font-family: 'Montserrat', sans-serif;
 }
 
+/*
+#skills > div {
+	width: 100%;
+}*/
+
 .skill {
 	padding: 50px 0;
 }
 
-.skill-list {
+.skill-list-one, .skill-list-two  {
 	list-style-type: none;
 	width: 100%;
 }
 
-.skill-list li {
+.skill-list-one li {
+	display: block;
+	width: 100%;
+}
+
+.skill-list-two li {
 	display: inline-block;
 	width: 19%;
 	text-align: center;
@@ -353,7 +356,7 @@ nav {
 	top: 0;
 }
 
-.progress-div {
+/*.progress-div {
 	width: 65%; 
 	float: left; 
 	position: relative; 
@@ -363,11 +366,11 @@ nav {
 .progress-img-div {
 	width: 25%; 
 	float: left;
-}
+}*/
 
-.skill-img {
+/*.skill-img {
 	margin-left: 40%;
-}
+}*/
 
 .contact {
 	width: 70%;
@@ -445,3 +448,115 @@ footer p {
 	padding-bottom: 10px;
 }
 
+
+
+
+
+@media screen and (max-width: 760px) {
+	
+	.front img {
+		max-width: 250px;
+	}
+
+	nav {
+		height: 43vh;
+	}
+
+	.nav-list {
+		margin: 0 auto;
+		transform: translate(0%, 5%);
+	}
+
+	.nav-list li {
+		display: block;
+		margin: 8px;
+		text-align: center;
+		padding-bottom: 1.8em;
+	}
+
+	.about p {
+		padding: 0;
+	}
+
+	.about h2 {
+		font-size: 1.9em;
+	}
+
+	.portfolio h2 {
+		font-size: 1.85em;
+	}	
+
+	.heading-text {
+		font-size: 1em;
+		position: relative;
+	}
+
+	.sub-text {
+		font-size: .8em;
+		position: relative;
+	}
+
+	.container {
+		margin: 0;
+		margin-bottom: 30px;
+		width: 120%;
+		position: relative;
+		right: 12%;
+	}
+
+	.skill-img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.progress-wrap-html,
+	.progress-wrap-css,
+	.progress-wrap-js,
+	.progress-wrap-php,
+	.progress-wrap-sql,
+	.progress-wrap-linux,
+	.progress-wrap-git,
+	.progress-wrap-laravel,
+	.progress-wrap-jquery,
+	.progress-wrap-bootstrap  {
+		background: #E55039;
+		margin: 5px 0 40px 0;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.skill-list-two li {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+
+	.contact h2 {
+		font-size: 1.6em;
+	}
+
+	.contact-info > li:nth-child(1) {
+		font-size: 1.8em;
+	}
+
+	div.contact .accounts-list {
+		width: 120%;
+		right: 10%;
+	}
+
+	footer p {
+		padding-top: 3vh;
+		letter-spacing: 0;
+		/*color: white;
+		font-size: 1.2em;
+		letter-spacing: .3em;
+		padding-top: 1em;
+		text-align: center;
+		font-family: 'Montserrat', sans-serif;*/
+	}
+
+	footer {
+		height: 15vh;
+	}
+
+}
