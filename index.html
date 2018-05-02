@@ -23,17 +23,21 @@
 	
 		<!-- Message, Picture -->
 		<div class="front">
+
 			<div class="picture">
 				<img src="img/rellie-balagat.jfif" class="center-block">
 			</div>
-				<h2>Hi! I'm Rellie Rubio Balagat</h2>
-				<h3>ASPIRING FULL-STACK WEB DEVELOPER</h3>
-				<ul class="accounts-list" style="margin-top: 20px;">
-					<li><a href="https://www.facebook.com/rbrellie"><span><i class="fab fa-facebook"></i></span></a></li>
-					<li><a href="https://www.linkedin.com/in/rellie-balagat-239084144/"><span><i class="fab fa-linkedin"></i></span></a></li>
-					<li><a href="https://github.com/relliebalagat"><span><i class="fab fa-github"></i></span></a></li>
-					<li><a href="https://stackoverflow.com/users/9589723/rellie"><span><i class="fab fa-stack-overflow"></i></span></a></li>
-				</ul>
+
+			<h2>Hi! I'm Rellie Rubio Balagat</h2>
+			<h3>ASPIRING FULL-STACK WEB DEVELOPER</h3>
+			<ul class="accounts-list" style="margin-top: 20px;">
+				<li><a href="https://www.facebook.com/rbrellie"><span><i class="fab fa-facebook"></i></span></a></li>
+				<li><a href="https://www.linkedin.com/in/rellie-balagat-239084144/"><span><i class="fab fa-linkedin"></i></span></a></li>
+				<li><a href="https://github.com/relliebalagat"><span><i class="fab fa-github"></i></span></a></li>
+				<li><a href="https://stackoverflow.com/users/9589723/rellie"><span><i class="fab fa-stack-overflow"></i></span></a></li>
+			</ul>
+
+			<a href="https://www.linkedin.com/in/rellie-balagat-239084144/"><button class="download-resume"><span><i class="fas fa-download"></i></span>Download Resume</button></a>
 
 			<!-- Navigation -->
 			<nav>
@@ -45,16 +49,14 @@
 					<li class="parallelogram"><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
-
-			<!-- <button>Download Resume</button> -->
-
+			
 		</div>
 
 		<!-- About -->
 		<div class="about" id="aboutMe">
 			<h2>About Me</h2>	
 
-			<section class="timeline">
+			<div class="timeline">
 				<h3>Education and Training</h3>
 			  	<ul>
 				  	<li>
@@ -75,9 +77,9 @@
 			    		</div>
 			    	</li>
 				</ul>
-			</section>
+			</div>
 
-			<section class="timeline" style="padding-top: 40px;">
+			<div class="timeline">
 				<h3>Work Experience</h3>
 			  	<ul>
 					<li>
@@ -93,7 +95,7 @@
 			    		</div>
 			    	</li>
 				</ul>
-			</section>
+			</div>
 		</div>
 
 		<!-- Portfolio -->
@@ -142,7 +144,6 @@
 				<li>
 					<div class="progress-img-div">
 						<img src="img/html5.png" alt="html5" class="skill-img">
-
 					</div>
 					<div class="progress-div">
 						<div class="progress-wrap-html progress" data-progress-percent="90" title="9/10">
@@ -234,7 +235,7 @@
 		</div>
 
 		<!-- Contact -->
-		<section style="width: 100%; background-color: #f7f1e3;">
+		<section>
 			<div class="contact center-block" id="contact">
 				<h2>Contact Me</h2>
 
@@ -282,35 +283,35 @@
 
 	<script type="text/javascript">
 			
-			var skillSet = ["html", "css", "js", "php", "sql", "linux", "git", "laravel", "jquery", "bootstrap"]
+		var skillSet = ["html", "css", "js", "php", "sql", "linux", "git", "laravel", "jquery", "bootstrap"]
 
-		    for(var i = 0; i < skillSet.length; i++) {
-		    	moveProgressBar(skillSet[i]);
-		    }
-		    // on browser resize...
-		    $(window).resize(function() {
-		        for(var i = 0; i < skillSet.length; i++) {
-		    		moveProgressBar(skillSet[i]);
-		    	}
-		    });
+	    for(var i = 0; i < skillSet.length; i++) {
+	    	moveProgressBar(skillSet[i]);
+	    }
+	    // on browser resize...
+	    $(window).resize(function() {
+	        for(var i = 0; i < skillSet.length; i++) {
+	    		moveProgressBar(skillSet[i]);
+	    	}
+	    });
 
-		    // SIGNATURE PROGRESS
-		    function moveProgressBar(skill) {
-		      	console.log("moveProgressBar" + skill);
-		        var getPercent = ($('.progress-wrap' + '-' + skill).data('progress-percent') / 100);
-		        console.log(getPercent);
-		        var getProgressWrapWidth = $('.progress-wrap' + '-' + skill).width();
-		        console.log(getProgressWrapWidth);
-		        var progressTotal = Math.floor(getPercent * getProgressWrapWidth);
-		        console.log(progressTotal);
-		        var animationLength = 2500;
-		        
-		        // on page load, animate percentage bar to data percentage length
-		        // .stop() used to prevent animation queueing
-		        $('.progress-bar'+ '-' + skill).stop().animate({
-		            left: progressTotal
-		        }, animationLength);
-		    }
+	    // SIGNATURE PROGRESS
+	    function moveProgressBar(skill) {
+	      	console.log("moveProgressBar" + skill);
+	        var getPercent = ($('.progress-wrap' + '-' + skill).data('progress-percent') / 100);
+	        console.log(getPercent);
+	        var getProgressWrapWidth = $('.progress-wrap' + '-' + skill).width();
+	        console.log(getProgressWrapWidth);
+	        var progressTotal = Math.floor(getPercent * getProgressWrapWidth);
+	        console.log(progressTotal);
+	        var animationLength = 2500;
+	        
+	        // on page load, animate percentage bar to data percentage length
+	        // .stop() used to prevent animation queueing
+	        $('.progress-bar'+ '-' + skill).stop().animate({
+	            left: progressTotal
+	        }, animationLength);
+	    }
 
 
 	</script>

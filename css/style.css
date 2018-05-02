@@ -93,10 +93,25 @@ a:link {
 	margin-top: 10px;
 }
 
-/* Navigation Bar */
+.download-resume {
+	padding: 10px;
+	font-size: 15px;
+	font-family: 'Montserrat', sans-serif;
+	margin: 20px auto;
+	display: block;
+	border: 1px solid rgb(229,80,57);
+	color: rgb(229,80,57);
+	background-color: #f7f1e3; 
+}
+
+.download-resume > span > i.fas {
+	padding: 0 5px;
+}
+
+/*-----------Navigation Bar-----------*/
+
 nav {
-	height: 12588888888P"""""""""""""""""""""""""""""";km
-	\7="''''vh;
+	height: 65px;
 }
 
 .nav-list, .accounts-list {
@@ -143,9 +158,8 @@ footer {
 nav {
 	display: grid;
 	grid-template-columns: repeat(1, 5fr);
-	position: relative; 
-	top: 3%; 
 	background-color: rgba(229,80,57, .9);
+	margin-top: 20px;
 }
 
 .nav-list {
@@ -294,11 +308,6 @@ section#portfolio {
 	font-family: 'Montserrat', sans-serif;
 }
 
-/*
-#skills > div {
-	width: 100%;
-}*/
-
 .skill {
 	padding: 50px 0;
 }
@@ -356,21 +365,16 @@ section#portfolio {
 	top: 0;
 }
 
-/*.progress-div {
-	width: 65%; 
-	float: left; 
-	position: relative; 
-	top: 30%;
+.skill-img {
+	display: block;
+	margin: 0 auto;
 }
 
-.progress-img-div {
-	width: 25%; 
-	float: left;
-}*/
+section {
+	width: 100%;
+	background-color: #f7f1e3;
+}
 
-/*.skill-img {
-	margin-left: 40%;
-}*/
 
 .contact {
 	width: 70%;
@@ -447,8 +451,6 @@ footer p {
 	letter-spacing: 3px;
 	padding-bottom: 10px;
 }
-
-
 
 
 
@@ -547,16 +549,61 @@ footer p {
 	footer p {
 		padding-top: 3vh;
 		letter-spacing: 0;
-		/*color: white;
-		font-size: 1.2em;
-		letter-spacing: .3em;
-		padding-top: 1em;
-		text-align: center;
-		font-family: 'Montserrat', sans-serif;*/
 	}
 
 	footer {
 		height: 15vh;
 	}
+
+}
+
+@media screen and (min-width: 761px) {
+
+
+	.picture {
+		margin-top: 8%;
+	}
+
+
+	.skill-list-one {
+		content: "";
+  		display: table;
+  		clear: both;
+	}
+
+	.progress-div {
+		width: 65%;
+		float: left;
+		display: block;
+		height: 128px;
+		transform: translate(0, 25%);
+	}
+	
+	.progress-img-div {
+		width: 30%;	
+		float: left;
+	}
+
+	
+	.skill-list-two li {
+		display: inline-block;
+		width: 49.5%;
+		text-align: center;
+		padding: 1%;
+	}
+
+	.skill-list-two li:nth-child(5) {
+		margin: 0 auto;
+		display: block;
+	}
+
+	footer p {
+		transform: translate(0, 30%);
+	}
+
+	.contact-form {
+		padding-top: 1.5em;
+	}
+
 
 }
