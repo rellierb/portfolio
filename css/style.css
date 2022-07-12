@@ -342,7 +342,15 @@ section#portfolio {
 .progress-wrap-git,
 .progress-wrap-laravel,
 .progress-wrap-jquery,
-.progress-wrap-bootstrap  {
+.progress-wrap-bootstrap,
+.progress-wrap-csharp,  
+.progress-wrap-mssql,
+.progress-wrap-react,
+.progress-wrap-vue,
+.progress-wrap-angular,  
+.progress-wrap-nodejs,  
+.progress-wrap-ruby,  
+.progress-wrap-dotnet  {
 	background: #E55039;
 	margin: 20px 0;
 	overflow: hidden;
@@ -358,7 +366,15 @@ section#portfolio {
 .progress-bar-git,
 .progress-bar-laravel,
 .progress-bar-jquery,
-.progress-bar-bootstrap {
+.progress-bar-bootstrap,
+.progress-bar-csharp, 
+.progress-bar-mssql, 
+.progress-bar-react,
+.progress-bar-vue,
+.progress-bar-angular,
+.progress-bar-nodejs,
+.progress-bar-ruby, 
+.progress-bar-dotnet {
 	background: #f7f1e3;
 	left: 20%;
 	position: absolute;
@@ -452,7 +468,35 @@ footer p {
 	padding-bottom: 10px;
 }
 
+.row {
+  display: flex;
+}
 
+.column {
+  flex: 50%;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 20px;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: max-content 200px 1fr;
+}
+
+.card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#portfolio p {
+	color: #000;
+}
 
 @media screen and (max-width: 760px) {
 	
@@ -520,7 +564,8 @@ footer p {
 	.progress-wrap-git,
 	.progress-wrap-laravel,
 	.progress-wrap-jquery,
-	.progress-wrap-bootstrap  {
+	.progress-wrap-bootstrap,
+	.progress-wrap-csharp  {
 		background: #E55039;
 		margin: 5px 0 40px 0;
 		overflow: hidden;
